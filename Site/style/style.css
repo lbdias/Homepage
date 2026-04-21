@@ -16,6 +16,7 @@ section pre {
     --fonth3: "Crimson Text", serif;
     --bg-color: #000000;
     --ft-color: white;
+    --lk-color: #868686;
 }
 
 font {
@@ -42,6 +43,23 @@ body {
     text-align: center;
 }
 
+.link-lang {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.link-lang a {
+    color: var(--ft-color);
+    text-decoration: none;
+    font-size: 0.85em;
+    margin-left: 10px;
+}
+
+.link-lang a:hover {
+    color: var(--lk-color);
+}
+
 header > h1 {
     font-family: var(--fonth1);
     font-size: 2.5em;   
@@ -62,6 +80,7 @@ header > h2 {
     gap: 50px;              
     padding: 0 50px;
 }
+
 #me {
     max-width: 700px;       
     text-align: justify;
@@ -86,6 +105,45 @@ header > h2 {
     width: 300px;       
     height: 300px;        
     object-fit: cover;
+}
+
+#perc {
+    height: 100vh; 
+    width: 100%;           
+    display: flex;
+    flex-direction: row;    
+    justify-content: center; 
+    align-items: center;    
+    gap: 50px;              
+    padding: 0 50px;
+}
+
+.perc-text h3 {
+    font-family: var(--fonth3);
+    font-size: 2em;
+    margin-bottom: 20px;
+    display: fixed;
+}
+
+.perc-text a {
+    font-family: var(--fonth3);
+    color: var(--ft-color);
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding-bottom: 20px;
+    display: block;  
+}
+
+.perc-text a:hover {
+    color: var(--lk-color);
+}
+
+.perc-text p {
+    max-width: 700px;       
+    text-align: justify;
+    padding-right: 50px;
 }
 
 
