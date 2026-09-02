@@ -108,45 +108,65 @@ header > h2 {
 }
 
 #perc {
-    height: 100vh; 
     width: 100%;           
     display: flex;
-    flex-direction: row;    
-    justify-content: center; 
-    align-items: center;    
-    gap: 50px;              
-    padding: 0 50px;
+    flex-direction: column;    
+    justify-content: flex-start; 
+    align-items: center;             
+    padding: 50px;
 }
 
-.perc-text h3 {
+#perc > h3 {
     font-family: var(--fonth3);
     font-size: 2em;
     margin-bottom: 20px;
-    display: fixed;
+    align-self: flex-start;
+    margin-left: 50px;
 }
 
-.perc-text a {
+.projeto {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-left: 50px;
+}
+
+.projeto-text {
+    max-width: 700px;
+    text-align: justify;
+}
+
+.projeto-text a {
     font-family: var(--fonth3);
     color: var(--ft-color);
     text-decoration: none;
     font-size: 1.2em;
     margin-top: 20px;
-    margin-left: 50px;
     padding-bottom: 20px;
     display: block;  
 }
 
-.perc-text a:hover {
+.projeto-text a:hover {
     color: var(--lk-color);
 }
 
-.perc-text p {
-    max-width: 700px;       
+.projeto-text p {
     text-align: justify;
-    padding-right: 50px;
 }
 
+.list {
+    padding: 20px;
+    padding-left: 40px;
+}
 
+.gif {
+    width: 350px;       
+    height: 250px;        
+    object-fit: contain;
+}
 
 footer {
     background-color: var(--bg-colorfooter);
@@ -155,4 +175,145 @@ footer {
     padding: 12px;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    header > h1 {
+        font-size: 2em;
+    }
+
+    header > h2 {
+        font-size: 1.4em;
+    }
+
+    .link-lang a {
+        font-size: 0.7em;
+        margin-left: 5px;
+    }
+
+    #about {
+        flex-direction: column;
+        height: auto;
+        padding: 50px 20px;
+        gap: 30px;
+    }
+
+    #me {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    #me > h3 {
+        font-size: 1.5em;
+    }
+
+    #foto {
+        width: 200px;
+        height: 200px;
+    }
+
+    #perc {
+        padding: 30px 20px;
+    }
+
+    #perc > h3 {
+        margin-left: 0;
+        font-size: 1.5em;
+    }
+
+    .projeto {
+        flex-direction: column;
+        padding-left: 0;
+        gap: 30px;
+    }
+
+    .projeto-text {
+        max-width: 100%;
+    }
+
+    .projeto-text a {
+        font-size: 1em;
+    }
+
+    .gif {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .citacao {
+        font-size: 1em;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header > h1 {
+        font-size: 1.5em;
+    }
+
+    header > h2 {
+        font-size: 1.1em;
+    }
+
+    .link-lang {
+        top: 10px;
+        right: 10px;
+    }
+
+    .link-lang a {
+        font-size: 0.6em;
+        margin-left: 3px;
+    }
+
+    #about {
+        padding: 30px 15px;
+        gap: 20px;
+    }
+
+    #me > h3 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+
+    #foto {
+        width: 150px;
+        height: 150px;
+    }
+
+    #perc {
+        padding: 20px 15px;
+    }
+
+    #perc > h3 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+
+    .projeto {
+        gap: 20px;
+    }
+
+    .projeto-text a {
+        font-size: 0.95em;
+        margin-top: 15px;
+    }
+
+    .projeto-text p {
+        font-size: 0.95em;
+    }
+
+    .list {
+        padding: 15px;
+        padding-left: 25px;
+        font-size: 0.9em;
+    }
+
+    .gif {
+        max-width: 250px;
+    }
+
+    .citacao {
+        font-size: 0.95em;
+    }
 }
